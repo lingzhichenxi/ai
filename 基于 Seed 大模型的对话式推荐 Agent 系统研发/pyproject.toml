@@ -1,0 +1,15 @@
+[project]
+name = "seed-recommendation-agent"
+version = "0.1.0"
+description = "Conversational recommendation agent with auditable reasoning and hybrid ranking"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+api = ["fastapi>=0.110", "uvicorn>=0.27"]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
